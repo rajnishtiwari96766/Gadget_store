@@ -26,7 +26,7 @@ const Provider = ({ children }) => {
     try {
       const res = await axios.get(url);
       const products = await res.data;
-      // console.log(products)
+      console.log({products});
       dispatch({ type: "Get_Data", payload: products });
       //payload means what do you need during the state
     } catch (error) {

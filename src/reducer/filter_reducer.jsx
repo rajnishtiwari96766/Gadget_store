@@ -1,4 +1,4 @@
-const filter_reducer = (state, action) => {
+  const filter_reducer = (state, action) => {
   switch (action.type) {
     case "Load_all_prod":
       return {
@@ -32,10 +32,14 @@ const filter_reducer = (state, action) => {
         }
 
     case "sort_data":
+      // eslint-disable-next-line no-case-declarations
       let newSortedData;
+      // eslint-disable-next-line no-case-declarations
       const { filter_products } = state;
+      // eslint-disable-next-line no-case-declarations
       let tempSortedData = [...filter_products];
 
+      // eslint-disable-next-line no-case-declarations
       const compare_data = (a, b) => {
         if (state.sort_value === "lowest") {
           return a.price - b.price;
@@ -61,6 +65,7 @@ const filter_reducer = (state, action) => {
       };
 
     case "update_filter_values":
+      // eslint-disable-next-line no-case-declarations
       const { name, value } = action.payload;
       return {
         ...state,
@@ -71,9 +76,12 @@ const filter_reducer = (state, action) => {
       };
 
     case "filtered_products":
+      // eslint-disable-next-line no-case-declarations
       let { all_products } = state;
+      // eslint-disable-next-line no-case-declarations
       let temp_products = [...all_products];
 
+      // eslint-disable-next-line no-case-declarations
       const { text,category } = state.filters; //this will get the text-data/category-data from the text-box
 
       //this is used to compare the text

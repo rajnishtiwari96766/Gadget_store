@@ -5,7 +5,7 @@ const Hero_sec = ({ myData }) => {
   return (
     <div className="flex">
       <div className="p-16 pt-32">
-        <h1 class="text-3xl font-bold text-gray-700 pb-2">{intro}</h1>
+        <h1 className="text-3xl font-bold text-gray-700 pb-2">{intro}</h1>
         <p className="w-full  ">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero,
           natus porro similique laudantium obcaecati nostrum dolore veritatis

@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import Hero_sec from "./hero_sec";
 
 const About = () => {

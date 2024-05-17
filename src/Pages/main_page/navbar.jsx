@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { customHook2 } from "../../context/filter_context";
+import { useState } from "react";
 
 
 const Navbar = () => {
@@ -42,13 +43,13 @@ const Navbar = () => {
         <div className="flex space-x-4 sm:space-x-8 md:space-x-12 lg:space-x-20 font-medium">
           <span className="hidden sm:block">Log in</span>
           <NavLink to="/cart" className="hidden sm:block">
-            <i class="fa-solid fa-cart-shopping"></i>
+            <i className="fa-solid fa-cart-shopping"></i>
           </NavLink>
           <button className="block md:hidden" onClick={togglemenu}>
             {menu ? (
-              <i class="fa-solid fa-xmark"></i>
+              <i className="fa-solid fa-xmark"></i>
             ) : (
-              <i class="fa-solid fa-bars"></i>
+              <i className="fa-solid fa-bars"></i>
             )}{" "}
           </button>
         </div>

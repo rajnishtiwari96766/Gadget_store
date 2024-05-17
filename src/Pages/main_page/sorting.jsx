@@ -16,8 +16,6 @@ const Sorting = () => {
 
   const comp_name = filter_products.map((data, index) => data.company);
 
-  const { company } = Single_prod();
-
   const getUniqueData = (data, property) => {
     let newValue = data.map((currElem) => {
       return currElem[property];
@@ -63,6 +61,7 @@ const Sorting = () => {
           <select name="filter" id="filter" onChange={company_sort}>
             {["Select Brand", ...new Set(comp_name)].map((data, index) => {
               return (
+                // eslint-disable-next-line react/jsx-key
                 <option value="">
                   {data.charAt(0).toUpperCase() + data.slice(1).toLowerCase()}
                 </option>
