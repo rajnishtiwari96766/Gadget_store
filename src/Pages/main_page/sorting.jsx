@@ -102,14 +102,6 @@ const Sorting = ({ product }) => {
       </div>
 
       <div className="pt-3">
-        <label htmlFor="rangeInput">Value: {value}</label>
-        <input type="range" id="rangeInput" min={0} max={6000001} value={value} onChange={handleChange} />
-        {/* {price_data.map((data,index)=>{
-          return data;
-        })} */}
-      </div>
-
-      <div className="pt-3">
         {color_product_data.map((currElem, index) => {
           return (
             <button
