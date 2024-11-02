@@ -32,7 +32,7 @@ const Cart = () => {
           <p>Item</p>
           <p>Price</p>
           <p>Quantity</p>
-          <p>Sub-total</p>
+          <p>Sub-Total</p>
         </div>
       </div>
 
